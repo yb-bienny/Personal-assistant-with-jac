@@ -16,9 +16,8 @@ Get Groq API key from "console.groq.com"
 #Set environment variable
 Linux/Mac/WSL
 export GROQ_API_KEY="your_api_key_here"
-
-# Windows PowerShell
-$env:GROQ_API_KEY="your_api_key_here"
+PowerShell
+$ env:GROQ_API_KEY="your_api_key_here"
 
 #Run
 jac run assistant.jac
