@@ -1,29 +1,21 @@
 # Personal-assistant-with-jac
-A simple jac program that uses 'by llm' to implement a personal AI assistant that organises tasks and usee AI to generate responses.
+A simple jac program that uses 'by llm' to implement a personal AI assistant that organises tasks and uses AI to generate responses.
 
 ##Features
 
 Intent classification
+
 Response generation
-Text summarization
+
 Keyword extraction
 
 ##Setup
 
 #Install dependencies
-pip install jaclang groq
-Get Groq API key from "console.groq.com"
 
+pip install jaclang 
 
-#Set environment variable
-
-Linux/Mac/WSL
-
-export GROQ_API_KEY="your_api_key_here"
-
-PowerShell
-
-$ env:GROQ_API_KEY="your_api_key_here"
+Get  API key from 
 
 #Run
 
@@ -33,17 +25,12 @@ jac run assistant.jac
 
 Edit the global LLM settings in the code:
 jac glob llm = byLLM(
-    model_name="groq/llama-3.1-70b-versatile",
-    api_key=os.getenv("GROQ_API_KEY"),
-    temperature=0.7,
-    max_tokens=1000
+    model_name="Enter Model name",
+    
+    api_key= Enter API key,
+    
 );
 #Add New Features
 
-Just add methods with by llm:
-
-jac can your_method(text: str) -> str by llm;
-
 #Resources
 'Jac Documentation'
-'Groq Docs'
